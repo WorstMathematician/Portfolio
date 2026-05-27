@@ -1,0 +1,7 @@
+kpi,value,display_value,target,status,business_use
+Net Budget Variance,-0.02498013846328453,$-44.0K / -2.5%,Green abs <= 3%; Yellow 3%-7%; Red > 7%,Green,Shows whether actual spending is materially different from plan.
+Forecast Accuracy,0.9750198615367155,97.5%,Green >= 97%; Yellow 93%-96.9%; Red < 93%,Green,Measures how close the budget was to actuals.
+Unfavorable Variance Exposure,0.02199069345136761,$38.8K / 2.2%,Green <= 3%; Yellow 3%-7%; Red > 7%,Green,Quantifies cost pressure requiring forecast review.
+Material Variance Rate,0.5555555555555556,40 lines / 55.6%,Green <= 10%; Yellow 10%-20%; Red > 20%,Red,Shows how often account-level spending deviates by 10% or more.
+Average Monthly Abs. Variance,0.037091172909770175,3.7%,Green <= 3%; Yellow 3%-7%; Red > 7%,Yellow,Identifies consistency of monthly planning accuracy.
+Largest Monthly Variance,-0.1024630872483221,"Jul 2023; $-15.3K / -10.2%",Review with cost owner,Red,Highlights the month requiring the clearest management explanation.
