@@ -1,0 +1,7 @@
+setup,model,accuracy,precision,recall,f1,roc_auc,brier_score
+Original,Random Forest,0.9198,0.9341,0.9630,0.9483,0.9689,0.0715
+Original,Logistic Regression,0.9057,0.9329,0.9444,0.9387,0.9572,0.0740
+Original,Linear Regression,0.9151,0.9337,0.9568,0.9451,0.9140,0.0741
+Stricter,Logistic Regression Strict,0.8915,0.9371,0.9198,0.9283,0.9498,0.0794
+Stricter,Linear Regression Strict,0.9009,0.9325,0.9383,0.9354,0.9222,0.0760
+Stricter,Random Forest Strict,0.7028,0.9231,0.6667,0.7742,0.8956,0.1819
