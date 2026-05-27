@@ -1,0 +1,8 @@
+kpi,value,display_value,target,status,business_use
+Latest-Year Benchmark Revenue,606248.9115879856,$606.2B,Track YoY and peer mix,Green,Sizes the peer set used for external benchmarking.
+Top 5 Revenue Concentration,0.3612529577471613,36.1%,Green < 35%; Yellow 35%-50%; Red > 50%,Yellow,Measures concentration among large incumbents.
+USA Revenue Share,0.5448114286645855,54.5%,Context metric; review country exposure,Green,Shows geographic exposure of the benchmark set.
+Eligible Median Peer CAGR,0.04388360255900065,4.4%,Green >= 5%; Yellow 2%-5%; Red < 2%,Yellow,Provides a market-based base growth anchor.
+Eligible Top-Quartile CAGR,0.07348415800104457,7.3%,Upside growth benchmark,Green,Sets an aggressive but peer-grounded upside case.
+3-Year Base LRP Growth,0.1375126291481401,13.8%,Use as base scenario assumption,Green,Connects benchmark growth to a planning scenario.
+Companies Benchmarked,100.0,100,Broad peer coverage,Green,Indicates sample breadth for external benchmarking.
