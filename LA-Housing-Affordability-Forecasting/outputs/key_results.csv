@@ -1,0 +1,14 @@
+metric,value,notes
+final_cleaned_zip_year_observations,1248,After income floor and merge cleaning
+unique_zip_codes,212,Los Angeles County ZIP/ZCTA areas in final cleaned panel
+mean_rent_to_income_pct,37.5320,Overall cleaned dataset mean
+median_rent_to_income_pct,34.3598,Overall cleaned dataset median
+minimum_rent_to_income_pct,21.0373,Overall cleaned dataset minimum
+maximum_rent_to_income_pct,121.9401,Overall cleaned dataset maximum
+share_cost_burdened_pct,74.3590,Share of ZIP-year observations >= 30 percent
+mean_burden_2015_pct,35.9079,Countywide mean burden in 2015
+peak_mean_burden_year,2018,Peak year by countywide mean burden
+peak_mean_burden_pct,39.2886,Countywide mean burden in 2018
+mean_burden_2024_pct,36.7495,Countywide mean burden in 2024
+share_cost_burdened_2024_pct,76.4151,Share of ZIP-year observations >= 30 percent in 2024
+forecast_zip_count_2025,197,ZIP codes with sufficient lag history for forecast
