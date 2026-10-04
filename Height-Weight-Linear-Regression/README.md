@@ -2,40 +2,80 @@
 
 ## Project overview
 
-This project analyzes the relationship between height and weight using a simple linear regression model. The goal is to estimate a regression line that predicts weight from height and evaluate how well height alone explains variation in body weight.
+This project demonstrates simple linear regression for predicting weight from height. It now separates two distinct uses of the notebook:
 
-## Analytical value
+1. **Original-data analysis** — reruns the analysis on the original CSV when that file is supplied locally.
+2. **Synthetic demonstration** — runs the same analysis workflow on independently chosen illustrative data so the notebook remains executable without the original dataset.
 
-The project demonstrates regression modeling, exploratory data analysis, manual coefficient calculation, model evaluation, residual analysis, and statistical interpretation. It is useful as a portfolio project because it shows how to move from raw data to a fitted model and explain model quality in plain language.
+The synthetic demonstration is **not** a reproduction or validation of the historical results reported for the original 10,000-row dataset.
 
-## Questions answered
+## Result provenance
 
-- Is there a linear relationship between height and weight?
-- What regression equation predicts weight from height?
-- How much variation in weight is explained by height alone?
-- Are the residuals consistent with a reasonable linear-model fit?
-- What are the practical limitations of using height as the only predictor?
+The repository currently does not include the original 10,000-row CSV. The numerical results below are retained as **historical empirical results recorded by the original project** and cannot be independently reproduced from the repository alone until the original CSV is supplied.
 
-## Method
+### Historical original-data results
 
-- Dataset size: 10,000 individuals
-- Predictor variable: Height in inches
-- Response variable: Weight in pounds
+- Observations: 10,000
+- Mean height: 66.3676 inches
+- Mean weight: 161.4404 pounds
 - Estimated intercept: -350.737192
 - Estimated slope: 7.717288
 - R-squared: 0.8552
 - Residual Sum of Squares: 1,492,934.8396
 - Standard error of regression: 12.2198
+- 95% confidence interval for slope: 7.655028 to 7.779547
+- Slope p-value: < 0.001
 
-## Key interpretation
+These values should be interpreted as results from the original analysis, not as values produced by the notebook's default synthetic mode.
 
-The fitted model shows a strong positive linear relationship between height and weight. An R-squared value of about 0.855 means that height explains roughly 85.5 percent of the variation in weight in this dataset. Height is a useful predictor, but it does not fully determine weight because body composition, lifestyle, and other factors also matter.
+## Running the notebook
+
+### Synthetic demonstration
+
+Open `Project_3_Linear_Regression.ipynb` and leave:
+
+```python
+DATA_MODE = "synthetic"
+```
+
+The notebook will generate an illustrative height-weight dataset using parameters that are intentionally independent of the historical fitted coefficients above. Results produced in this mode describe only that synthetic dataset.
+
+### Original-data analysis
+
+1. Place the original CSV at `data/weight-height.csv` (or change `CSV_PATH` in the notebook).
+2. Set:
+
+```python
+DATA_MODE = "original"
+```
+
+3. Run all cells.
+
+The loader accepts common height/weight column names, including `Height` / `Weight` and `Height_Inches` / `Weight_Pounds`, validates numeric values, and then runs the same regression workflow.
+
+See `data/README.md` for the expected input format.
+
+## Analytical workflow
+
+The notebook demonstrates:
+
+- data loading and validation
+- exploratory summaries
+- scatter plotting
+- manual least-squares coefficient calculation
+- OLS fitting with `statsmodels`
+- R-squared and residual standard error
+- confidence intervals and p-values
+- regression-line visualization
+- residual diagnostics
+- interpretation with explicit source labeling
 
 ## Files
 
-- `Project_3_Linear_Regression.ipynb`: runnable notebook version of the regression analysis.
-- `REPORT_SUMMARY.md`: written summary of the project report.
+- `Project_3_Linear_Regression.ipynb`: runnable original/synthetic analysis workflow
+- `REPORT_SUMMARY.md`: interpretation and provenance of the historical project results
+- `data/README.md`: instructions for supplying the original CSV
 
 ## Portfolio framing
 
-This project demonstrates linear regression, statistical modeling, residual diagnostics, model interpretation, and data visualization.
+This project demonstrates linear regression and, importantly, reproducibility discipline: historical empirical results are kept separate from a runnable synthetic example when the source dataset is not distributed with the repository.
