@@ -4,99 +4,235 @@
 
 ### Finance Systems · Data Analytics · FP&A · Applied Statistics
 
-A work-in-progress portfolio focused on turning financial and operational data into clear analysis, decision support, and reproducible reporting.
+Turning financial and operational data into clear analysis, decision support, and reproducible reporting.
 
-[Featured Projects](#featured-projects) · [Analytics & Statistics](#analytics--statistics) · [Repository Guide](docs/README.md) · [How to Run](docs/RUNNING_PROJECTS.md)
+<p>
+  <img alt="Finance Systems" src="https://img.shields.io/badge/Finance%20Systems-1F6FEB?style=flat-square">
+  <img alt="Data Analytics" src="https://img.shields.io/badge/Data%20Analytics-2F81F7?style=flat-square">
+  <img alt="FP&A" src="https://img.shields.io/badge/FP%26A-388BFD?style=flat-square">
+  <img alt="Applied Statistics" src="https://img.shields.io/badge/Applied%20Statistics-6E7681?style=flat-square">
+  <img alt="Python" src="https://img.shields.io/badge/Python-0D1117?style=flat-square&logo=python&logoColor=white">
+</p>
+
+<p>
+  <a href="#featured-work"><strong>Featured Work</strong></a>
+  &nbsp;·&nbsp;
+  <a href="#analytics--statistics"><strong>Analytics & Statistics</strong></a>
+  &nbsp;·&nbsp;
+  <a href="docs/README.md"><strong>Repository Guide</strong></a>
+  &nbsp;·&nbsp;
+  <a href="docs/RUNNING_PROJECTS.md"><strong>How to Run</strong></a>
+</p>
+
+<img alt="Portfolio Validation" src="https://github.com/WorstMathematician/Portfolio/actions/workflows/portfolio-validation.yml/badge.svg">
 
 </div>
 
 ---
 
-> **Portfolio status:** Active and evolving. Projects are refined as documentation, validation, reproducibility, and presentation improve. The goal is to show finished work clearly while keeping the analytical process transparent.
+> **Portfolio status — Active & evolving.** Projects are continuously refined for clearer documentation, stronger reproducibility, cleaner presentation, and better decision-focused storytelling.
 
-## Welcome
+## ✦ Welcome
 
-This repository is the central home for my portfolio projects across finance, forecasting, data analysis, statistical modeling, and automation. It is designed for quick review by hiring managers, collaborators, and anyone interested in how I approach a business or analytical problem.
+This repository is the central home for my work across **finance, forecasting, data analysis, statistical modeling, and automation**. It is designed for quick review by hiring managers, collaborators, and anyone interested in how I translate data into useful decisions.
 
-Each featured project is organized around four questions:
+<table>
+<tr>
+<td align="center" width="25%"><strong>97.5%</strong><br><sub>FP&A forecast accuracy</sub></td>
+<td align="center" width="25%"><strong>0.9498</strong><br><sub>LA Housing ROC-AUC</sub></td>
+<td align="center" width="25%"><strong>100</strong><br><sub>Companies benchmarked</sub></td>
+<td align="center" width="25%"><strong>10</strong><br><sub>Finance workstreams reviewed</sub></td>
+</tr>
+</table>
 
-1. **What problem is being solved?**
-2. **What data and methods are used?**
-3. **What result or decision does the analysis support?**
-4. **Can the work be inspected and rerun responsibly?**
+---
 
-## Featured Projects
+## ⭐ Featured Work
 
-| Project | Focus | Selected evidence | Skills demonstrated |
-|---|---|---|---|
-| **[Program Finance Control Tower](Program-Finance-Control-Tower/README.md)** | Program finance & forecast review | 10 workstreams reviewed; 3 placed on the management watchlist | EAC, ETC, CPI, margin analysis, KPI design, executive reporting |
-| **[Budget vs. Actual FP&A Variance Analysis](Budget-vs-Actual-FPA-Variance-Analysis/README.md)** | FP&A & management reporting | 97.5% forecast accuracy; net variance of -2.5% in the scenario dataset | Variance analysis, materiality, forecast review, management commentary |
-| **[LA Housing Affordability Forecasting](LA-Housing-Affordability-Forecasting/README.md)** | Applied data science & public policy | 1,248 ZIP-year observations; final ROC-AUC 0.9498 | Public-data integration, feature engineering, classification, leakage-aware modeling |
-| **[Defense Contractor Peer Benchmarking](Defense-Contractor-Peer-Benchmarking/README.md)** | Strategic finance & benchmarking | 100 companies in the latest-year benchmark; 36.1% top-five concentration | Peer benchmarking, CAGR analysis, market concentration, scenario planning |
+<table>
+<tr>
+<td width="50%" valign="top">
 
-## Finance & Decision Support
+### 📊 Program Finance Control Tower
 
-### Program Finance Control Tower
-Transforms period-level cost data into a management control view for forecast review. The project calculates EAC, ETC, CPI, cost variance, projected margin, and watchlist status, then packages the results into decision-ready outputs.
+**Program finance · Forecast review · Management reporting**
 
-**Start here:** [Project overview and results →](Program-Finance-Control-Tower/README.md)
+A finance control view built to identify workstreams requiring leadership attention and forecast review.
 
-### Budget vs. Actual FP&A Variance Analysis
-Builds a monthly FP&A variance package from budget and actual expense data, highlighting material drivers, forecast accuracy, and areas requiring management follow-up.
+**Highlights**
+- 10 workstreams reviewed
+- 3 management watchlist items
+- EAC, ETC, CPI, margin, and risk metrics
 
-**Start here:** [Project overview and results →](Budget-vs-Actual-FPA-Variance-Analysis/README.md)
+**[Explore project →](Program-Finance-Control-Tower/README.md)**
 
-### Defense Contractor Peer Benchmarking
-Uses a scenario dataset to compare manufacturers by estimated category revenue, market concentration, geographic exposure, and multi-year growth. It then converts peer growth into downside, base, and upside planning references.
+</td>
+<td width="50%" valign="top">
 
-**Start here:** [Project overview and results →](Defense-Contractor-Peer-Benchmarking/README.md)
+### 📈 Budget vs. Actual FP&A
 
-## Analytics & Statistics
+**FP&A · Variance analysis · Forecast accuracy**
 
-### LA Housing Affordability Forecasting
-Analyzes Los Angeles County affordability pressure from 2015–2024 and models 2025 cost-burden risk using public income and rent data.
+A management reporting package that turns budget and actual expense data into clear variance drivers and forecast-review signals.
 
-**Start here:** [Project overview and results →](LA-Housing-Affordability-Forecasting/README.md)
+**Highlights**
+- 97.5% forecast accuracy
+- -2.5% net scenario variance
+- Materiality and account-level drilldowns
 
-### Height-Weight Linear Regression
-A regression project with an explicit separation between historical empirical results and a runnable synthetic demonstration. The refactored notebook emphasizes reproducibility and honest result provenance.
+**[Explore project →](Budget-vs-Actual-FPA-Variance-Analysis/README.md)**
 
-**Explore:** [Height-Weight Linear Regression →](Height-Weight-Linear-Regression/README.md)
+</td>
+</tr>
 
-### Caffeine Hypothesis Test
-A statistical inference project demonstrating one-sample hypothesis testing, decision rules, and communication of uncertainty.
+<tr>
+<td width="50%" valign="top">
 
-**Explore:** [Caffeine Hypothesis Test →](Caffeine-Hypothesis-Test/README.md)
+### 🏙️ LA Housing Affordability Forecasting
 
-### Bayesian Coin Flipping
-A compact Bayesian updating project using a Beta prior, simulated observations, and posterior inference to show how evidence changes probability estimates.
+**Data science · Public data · Predictive modeling**
 
-**Explore:** [Binomial Coin Flipping →](Binomial-Coin-Flipping/README.md)
+A Los Angeles County affordability analysis using public rent and income data to model future cost-burden risk.
 
-## What This Portfolio Emphasizes
+**Highlights**
+- 1,248 ZIP-year observations
+- 212 LA County ZIP codes
+- 0.9498 ROC-AUC
 
-| Capability | How it appears in the portfolio |
-|---|---|
-| **Financial analysis** | Budget variance, program controls, forecast review, peer benchmarking |
-| **Decision support** | KPI scorecards, management watchlists, executive summaries |
-| **Data analysis** | Cleaning, reshaping, aggregation, diagnostics, reproducible pipelines |
-| **Statistical modeling** | Regression, classification, hypothesis testing, Bayesian updating |
-| **Communication** | Business framing, limitations, source notes, concise interpretation |
-| **Reproducibility** | Data provenance notes, runnable code paths, automated repository validation |
+**[Explore project →](LA-Housing-Affordability-Forecasting/README.md)**
 
-## Repository Guide
+</td>
+<td width="50%" valign="top">
 
-Supporting documentation is indexed separately so the portfolio remains easy to scan.
+### 🛰️ Defense Contractor Peer Benchmarking
 
-- **[Documentation index](docs/README.md)** — repository-level supporting material
-- **[Dataset notes](docs/DATASETS.md)** — source labels and scenario-data context
-- **[Running the projects](docs/RUNNING_PROJECTS.md)** — local execution guidance
-- **[KPI guide](docs/KPI_GUIDE.md)** — finance-project metrics and visualization intent
-- **[Finance project index](docs/FINANCE_PROJECTS.md)** — overview of the finance-focused case studies
+**Strategic finance · Benchmarking · Scenario planning**
 
-## Quality & Validation
+A peer-analysis model covering estimated category revenue, concentration, geography, CAGR, and long-range planning scenarios.
 
-The repository uses GitHub Actions to validate:
+**Highlights**
+- 100 companies benchmarked
+- 36.1% top-five concentration
+- Peer-growth planning references
+
+**[Explore project →](Defense-Contractor-Peer-Benchmarking/README.md)**
+
+</td>
+</tr>
+</table>
+
+---
+
+## 💼 Finance & Decision Support
+
+<table>
+<tr>
+<td align="center"><strong>Program Controls</strong><br><sub>EAC · ETC · CPI · Margin</sub></td>
+<td align="center"><strong>FP&A</strong><br><sub>Budget · Actuals · Variance</sub></td>
+<td align="center"><strong>Strategic Finance</strong><br><sub>Benchmarking · CAGR · Scenarios</sub></td>
+<td align="center"><strong>Decision Support</strong><br><sub>KPIs · Watchlists · Executive summaries</sub></td>
+</tr>
+</table>
+
+The finance projects emphasize **management usefulness**, not just calculation: identifying what changed, why it matters, and what deserves attention next.
+
+---
+
+## 🧪 Analytics & Statistics
+
+<table>
+<tr>
+<td width="33%" valign="top">
+
+### 📐 Linear Regression
+
+Historical empirical results are clearly separated from a runnable synthetic demonstration, with explicit reproducibility and provenance controls.
+
+**[Height-Weight Regression →](Height-Weight-Linear-Regression/README.md)**
+
+</td>
+<td width="33%" valign="top">
+
+### ☕ Hypothesis Testing
+
+A statistical inference project demonstrating one-sample testing, decision rules, uncertainty, and plain-language interpretation.
+
+**[Caffeine Hypothesis Test →](Caffeine-Hypothesis-Test/README.md)**
+
+</td>
+<td width="33%" valign="top">
+
+### 🪙 Bayesian Updating
+
+A compact Bayesian project using a Beta prior, simulated observations, and posterior inference to show how evidence changes probability estimates.
+
+**[Bayesian Coin Flipping →](Binomial-Coin-Flipping/README.md)**
+
+</td>
+</tr>
+</table>
+
+---
+
+## 🧰 Toolkit
+
+<div align="center">
+
+<img alt="Python" src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white">
+<img alt="pandas" src="https://img.shields.io/badge/pandas-150458?style=for-the-badge&logo=pandas&logoColor=white">
+<img alt="scikit-learn" src="https://img.shields.io/badge/scikit--learn-F7931E?style=for-the-badge&logo=scikitlearn&logoColor=white">
+<img alt="Jupyter" src="https://img.shields.io/badge/Jupyter-F37626?style=for-the-badge&logo=jupyter&logoColor=white">
+<img alt="GitHub Actions" src="https://img.shields.io/badge/GitHub%20Actions-2088FF?style=for-the-badge&logo=githubactions&logoColor=white">
+
+</div>
+
+---
+
+## ✨ What This Portfolio Emphasizes
+
+| | Capability | Portfolio evidence |
+|---|---|---|
+| 💰 | **Financial analysis** | Budget variance, program controls, forecast review, peer benchmarking |
+| 🎯 | **Decision support** | KPI scorecards, management watchlists, executive summaries |
+| 🧹 | **Data analysis** | Cleaning, reshaping, aggregation, diagnostics, reproducible pipelines |
+| 📊 | **Statistical modeling** | Regression, classification, hypothesis testing, Bayesian updating |
+| 🗣️ | **Communication** | Business framing, limitations, source notes, concise interpretation |
+| ✅ | **Reproducibility** | Data provenance notes, runnable code paths, automated repository validation |
+
+---
+
+## 🗂️ Repository Guide
+
+<table>
+<tr>
+<td width="50%" valign="top">
+
+### Documentation
+
+- **[Documentation index](docs/README.md)**
+- **[Dataset notes](docs/DATASETS.md)**
+- **[KPI guide](docs/KPI_GUIDE.md)**
+
+</td>
+<td width="50%" valign="top">
+
+### Run & Review
+
+- **[Running the projects](docs/RUNNING_PROJECTS.md)**
+- **[Finance project index](docs/FINANCE_PROJECTS.md)**
+- **[Portfolio validation workflow](.github/workflows/portfolio-validation.yml)**
+
+</td>
+</tr>
+</table>
+
+---
+
+<details>
+<summary><strong>🔎 Quality & validation</strong></summary>
+<br>
+
+This repository uses GitHub Actions to validate:
 
 - Python compilation
 - critical lint errors
@@ -104,14 +240,16 @@ The repository uses GitHub Actions to validate:
 - Jupyter notebook structure
 - pytest tests when test files are present
 
-Workflow: [`.github/workflows/portfolio-validation.yml`](.github/workflows/portfolio-validation.yml)
+</details>
 
----
+<br>
 
 <div align="center">
 
-### Thanks for visiting.
+### Thanks for visiting 👋
 
-The best place to begin is the **[Featured Projects](#featured-projects)** section above.
+<strong>Start with the featured projects above.</strong>
+
+<sub>Built as an evolving portfolio of finance, analytics, and applied data work.</sub>
 
 </div>
