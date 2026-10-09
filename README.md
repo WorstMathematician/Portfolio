@@ -38,7 +38,7 @@ This repository is the central home for my work across **finance, forecasting, d
 
 <table>
 <tr>
-<td align="center" width="25%"><strong>97.5%</strong><br><sub>FP&A forecast accuracy</sub></td>
+<td align="center" width="25%"><strong>97.5%</strong><br><sub>FP&A aggregate budget adherence (historical)</sub></td>
 <td align="center" width="25%"><strong>0.9498</strong><br><sub>LA Housing ROC-AUC</sub></td>
 <td align="center" width="25%"><strong>100</strong><br><sub>Companies benchmarked</sub></td>
 <td align="center" width="25%"><strong>10</strong><br><sub>Finance workstreams reviewed</sub></td>
@@ -71,12 +71,12 @@ A finance control view built to identify workstreams requiring leadership attent
 
 ### 📈 Budget vs. Actual FP&A
 
-**FP&A · Variance analysis · Forecast accuracy**
+**FP&A · Variance analysis · Budget adherence**
 
-A management reporting package that turns budget and actual expense data into clear variance drivers and forecast-review signals.
+An expense variance pipeline that separates aggregate budget adherence from offsetting account-level planning errors.
 
 **Highlights**
-- 97.5% forecast accuracy
+- 97.5% historical aggregate budget adherence
 - -2.5% net scenario variance
 - Materiality and account-level drilldowns
 

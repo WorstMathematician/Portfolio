@@ -1,7 +1,7 @@
-# Data Note
+# Data provenance and reproduction limits
 
-Place the Kaggle file `Financial analysis_Data Set.xlsx` in `data/raw/` before running the analysis script.
+The original scenario is described as a synthetic Kaggle workbook named `Financial analysis_Data Set.xlsx`; it is **not included** in the repository. Provenance, workbook version and the published financial aggregates cannot currently be independently checked. Do **not** claim that running the new pipeline reproduces the original historical scorecard.
 
-The dataset is treated as synthetic scenario data for portfolio analysis. It is used to demonstrate budget-vs-actual reporting, variance analysis, forecast accuracy indicators, and executive FP&A communication.
+For independent runs, supply an explicit CSV or XLSX input with `Expenses`, `Month` and expense-account headers. Use exactly one Budget row and one Actual row per month. Expense amounts are finite, nonnegative numbers. Zero budget is supported at line level; missing or invalid observations are rejected. No imputations are performed. The default generated output location is `outputs/generated/`, separate from the preserved historical files.
 
-The cleaned working package contains the raw file, output CSVs, and PNG visuals. If this GitHub folder does not include the raw data or images, use the downloadable project package from the portfolio build session.
+The published 97.5% label was aggregate net budget adherence, not evidence of time-indexed forecast accuracy. A genuine forecasting study must archive forecast issuance dates, horizons and held-out realized outcomes.
