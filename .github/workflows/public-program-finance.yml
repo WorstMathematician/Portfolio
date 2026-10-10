@@ -1,0 +1,29 @@
+name: Public Program Finance Diagnostics
+on:
+  push:
+    paths:
+      - 'Public-Program-Financial-Forecasting/**'
+      - '.github/workflows/public-program-finance.yml'
+  pull_request:
+    paths:
+      - 'Public-Program-Financial-Forecasting/**'
+      - '.github/workflows/public-program-finance.yml'
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: Public-Program-Financial-Forecasting
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Install test dependencies
+        run: python -m pip install "pandas>=2,<3" "numpy>=1.24,<3" "pytest>=8,<10"
+      - name: Check Python compilation
+        run: python -m compileall -q src dashboard
+      - name: Validate official report totals
+        run: python -m src.pipeline
+      - name: Run tests
+        run: python -m pytest -q
