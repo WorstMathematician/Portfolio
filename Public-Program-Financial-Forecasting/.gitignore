@@ -1,4 +1,5 @@
 outputs/
+data/source_pdfs/
 __pycache__/
 .pytest_cache/
 *.pyc
