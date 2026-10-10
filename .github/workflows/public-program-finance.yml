@@ -25,5 +25,7 @@ jobs:
         run: python -m compileall -q src dashboard
       - name: Validate official report totals
         run: python -m src.pipeline
+      - name: Validate detailed ongoing program panel
+        run: python -m src.program_panel
       - name: Run tests
         run: python -m pytest -q

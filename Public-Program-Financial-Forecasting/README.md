@@ -1,8 +1,18 @@
 # Public Program Financial Forecasting
 
-**Status: Phase 1 foundation complete. Financial diagnostics and an interactive public-data explorer; not yet a validated predictive model.**
+**Status: Program-level data expanded; still an exploratory research dashboard, not a validated predictive model.**
 
 This independent portfolio case study investigates whether official LA County homelessness spending data support responsible financial prediction. It emphasizes source provenance, accounting reconciliation, statistical analysis, and honest model eligibility.
+
+## Program-by-agency dataset (added in second milestone)
+
+- [Download official-source ongoing program/agency data](data/ongoing_program_agency_2023_2025.csv): **73 financial records / 292 quarterly values**, representing **19 distinct programs**, **13 agencies**, and **31 program-agency pairs observed in both fiscal years**.
+- FY 2023–24: **32 program/agency rows**, exactly reconciled to $400,492,675.72 reported ongoing YTD expenditure.
+- FY 2024–25: **41 program/agency rows**, reconciled to $538,421,310 published ongoing YTD expenditure (the published quarterly sums are $1 higher).
+- New [Program Explorer](dashboard/pages/1_Program_Explorer.py) offers filters, real historical program charts, allocations vs actuals, source links and CSV export.
+- New [Data acquisition and reconciliation note](DATA_NOTE.md) documents transcription decisions, source pages and known limits.
+- Run **python -m src.program_panel** to create audited quarterly panel CSV and JSON reconciliation/readiness reports in **outputs/**.
+- **Important:** eight independent quarterly periods remain insufficient for the model promotion gate; no forecast accuracy is claimed.
 
 ## What has been validated
 
