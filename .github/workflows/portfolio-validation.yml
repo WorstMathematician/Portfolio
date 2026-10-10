@@ -26,7 +26,7 @@ jobs:
       - name: Install validation dependencies
         run: |
           python -m pip install --upgrade pip
-          python -m pip install flake8 pytest nbformat
+          python -m pip install flake8 pytest nbformat "pandas>=2,<3" "numpy>=1.24,<3"
 
       - name: Compile Python files
         run: |
