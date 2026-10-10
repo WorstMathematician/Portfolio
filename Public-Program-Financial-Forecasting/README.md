@@ -4,6 +4,14 @@
 
 This independent portfolio case study investigates whether official LA County homelessness spending data support responsible financial prediction. It emphasizes source provenance, accounting reconciliation, statistical analysis, and honest model eligibility.
 
+## FY 2022–23 detailed Measure H ongoing data (new)
+
+- [36 original strategy-agency source rows](data/ongoing_strategy_agency_2022_23.csv), each containing allocation, Q1–Q4 actual expenditure, YTD, original PDF page and provenance.
+- All rows and all published County totals reconcile **exactly**: USD 354,304,813.63 annual expenditures; USD 481,983,147 allocation.
+- Run **python -m src.validate_fy22**; included independent pytest integrity and corruption tests.
+- Original strategy identifiers are **not equated** with the FY 2023–24/2024–25 program names. The dataset adds a third detailed financial year, not a validated 12-quarter homogeneous program panel.
+- Source: [official FY 2022–23 ongoing quarterly report](https://homeless.lacounty.gov/wp-content/uploads/2023/11/Measure-H-Expenditure-Log-FY-22-23_COAB_V4.pdf), p. 1.
+
 ## Program-by-agency dataset (added in second milestone)
 
 - [Download official-source ongoing program/agency data](data/ongoing_program_agency_2023_2025.csv): **73 financial records / 292 quarterly values**, representing **19 distinct programs**, **13 agencies**, and **31 program-agency pairs observed in both fiscal years**.
