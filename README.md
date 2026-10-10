@@ -53,6 +53,8 @@ This repository is the central home for my work across **finance, forecasting, d
 <tr>
 <td width="50%" valign="top">
 
+<img src="assets/project-previews/program-finance.svg" alt="Concept preview: program ledger and management review." width="100%">
+
 ### 📊 Program Finance Control Tower
 
 **Program finance · Forecast review · Management reporting**
@@ -68,6 +70,8 @@ A finance control view built to identify workstreams requiring leadership attent
 
 </td>
 <td width="50%" valign="top">
+
+<img src="assets/project-previews/budget-variance.svg" alt="Concept preview: budget and actual ledgers, delta, and variance review." width="100%">
 
 ### 📈 Budget vs. Actual FP&A
 
@@ -88,6 +92,8 @@ An expense variance pipeline that separates aggregate budget adherence from offs
 <tr>
 <td width="50%" valign="top">
 
+<img src="assets/project-previews/housing-affordability.svg" alt="Concept preview: housing, rent and income, and cost-burden risk." width="100%">
+
 ### 🏙️ LA Housing Affordability Forecasting
 
 **Data science · Public data · Predictive modeling**
@@ -103,6 +109,8 @@ A Los Angeles County affordability analysis using public rent and income data to
 
 </td>
 <td width="50%" valign="top">
+
+<img src="assets/project-previews/peer-benchmarking.svg" alt="Concept preview: unscored peer comparison across revenue, growth, and geography." width="100%">
 
 ### 🛰️ Defense Contractor Peer Benchmarking
 

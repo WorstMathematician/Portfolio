@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="720" height="400" viewBox="0 0 720 400" role="img" aria-labelledby="title desc">
+<title id="title">Budget vs. Actual FP&amp;A</title>
+<desc id="desc">Budget and actual ledgers form a symbolic delta, followed by compare, explain and review. Concept illustration only; no measured results or quantitative scale.</desc>
+<g font-family="Arial, Helvetica, sans-serif">
+<rect x="1" y="1" width="718" height="398" rx="18" fill="#F3F6FA" stroke="#CBD5E1" stroke-width="2"/>
+<path d="M19 1 H701 Q719 1 719 19 V110 H1 V19 Q1 1 19 1" fill="#142A43"/>
+<rect x="28" y="27" width="5" height="55" rx="2" fill="#91B1DD" stroke="#91B1DD" stroke-width="2"/>
+<text x="48" y="43" font-size="18" fill="#CED9E5" font-weight="700">VARIANCE ANALYSIS</text>
+<text x="48" y="82" font-size="30" fill="#FFFFFF" font-weight="700">Budget vs. actual</text>
+<rect x="28" y="139" width="222" height="133" rx="12" fill="#FFFFFF" stroke="#CBD5E1" stroke-width="2"/><text x="50" y="177" font-size="21" fill="#34465B" font-weight="700">BUDGET</text><path d="M50 202 h174 M50 229 h174" fill="none" stroke="#94A3B8" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/><rect x="278" y="139" width="222" height="133" rx="12" fill="#FFFFFF" stroke="#CBD5E1" stroke-width="2"/><text x="300" y="177" font-size="21" fill="#34465B" font-weight="700">ACTUAL</text><path d="M300 202 h174 M300 229 h174" fill="none" stroke="#94A3B8" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/><text x="258" y="220" font-size="30" fill="#34465B" font-weight="700">−</text><rect x="526" y="139" width="166" height="133" rx="12" fill="#E5ECF8" stroke="#8FAACE" stroke-width="2"/><text x="549" y="178" font-size="21" fill="#34465B" font-weight="700">DELTA</text><text x="577" y="237" font-size="48" fill="#24588E" font-weight="700">Δ</text><path d="M360 282 V299 M350 289 L360 299 L370 289" fill="none" stroke="#52677F" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/><text x="91" y="331" font-size="24" fill="#34465B" font-weight="700">Compare</text><text x="280" y="331" font-size="24" fill="#34465B" font-weight="700">Explain</text><text x="468" y="331" font-size="24" fill="#34465B" font-weight="700">Review</text><path d="M218 323 h35 M405 323 h35" fill="none" stroke="#52677F" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="28" y="376" font-size="18" fill="#52677F" font-weight="700">CONCEPT ILLUSTRATION</text>
+</g></svg>
