@@ -1,0 +1,33 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "market-volatility-portfolio"
+version = "0.1.0"
+description = "Leakage-safe market returns and one-session volatility forecasting research"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+  "numpy>=1.26,<3",
+  "pandas>=2.0,<3",
+  "scipy>=1.11,<2",
+  "statsmodels>=0.14,<1",
+  "matplotlib>=3.8,<4",
+  "yfinance>=0.2.60,<1",
+]
+
+[project.optional-dependencies]
+garch = ["arch>=7.2,<9"]
+dashboard = ["plotly>=5.20,<7", "streamlit>=1.38,<2"]
+test = ["pytest>=8,<10"]
+all = ["arch>=7.2,<9", "plotly>=5.20,<7", "streamlit>=1.38,<2"]
+
+[project.scripts]
+market-volatility = "market_volatility.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

@@ -33,3 +33,17 @@ For projects that distinguish original and synthetic data modes, follow the proj
 ## Repository validation
 
 GitHub Actions validates Python compilation, critical lint errors, notebook structure, and pytest tests when tests are present.
+
+## Market returns and volatility forecasting
+
+This independent research project uses its own installable Python package and optional time-series/UI dependencies. From the repository root:
+
+    cd Market-Returns-Volatility-Forecasting
+    python -m venv .venv
+    # Activate the virtual environment for your operating system
+    python -m pip install -e ".[all,test]"
+    python -m pytest -q
+    python -m market_volatility.cli --symbol SPY --start 2010-01-01 --end 2026-10-17 --output-dir outputs/SPY
+    streamlit run dashboard.py
+
+The command downloads observed data when the provider is reachable; it does not generate synthetic scores if unavailable. The exclusive --end boundary should be updated intentionally for later samples. Consult [the full project README](../Market-Returns-Volatility-Forecasting/README.md) for offline provider CSV mode, model assumptions, audit files, and limitations.

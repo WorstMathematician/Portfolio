@@ -31,3 +31,11 @@
 Scenario datasets are used to demonstrate workflow, KPI design, reporting, and financial communication. They are not represented as audited financials, official procurement records, or proprietary internal program data.
 
 Project-specific provenance notes take precedence when they provide more detail.
+
+## Market Returns & Volatility Forecasting
+
+- Folder: Market-Returns-Volatility-Forecasting
+- Proposed source: Yahoo Finance daily SPY prices, including provider adjusted close and actions, via yfinance.
+- Raw data committed: **none**. The pipeline saves source snapshots and SHA-256 checksums locally when acquisition succeeds.
+- Research status: no verified market observations or empirical performance report is bundled. Synthetic software tests are explicitly separate.
+- Documentation: [Source and limitations](../Market-Returns-Volatility-Forecasting/docs/DATA_PROVENANCE.md)

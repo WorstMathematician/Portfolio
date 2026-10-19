@@ -1,0 +1,40 @@
+name: Market Volatility Validation
+
+on:
+  push:
+    branches:
+      - feature/market-returns-volatility-forecasting
+    paths:
+      - "Market-Returns-Volatility-Forecasting/**"
+      - ".github/workflows/market-volatility-validation.yml"
+  pull_request:
+    branches: [main]
+    paths:
+      - "Market-Returns-Volatility-Forecasting/**"
+      - ".github/workflows/market-volatility-validation.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  test-research-implementation:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: Market-Returns-Volatility-Forecasting
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+          cache: "pip"
+          cache-dependency-path: Market-Returns-Volatility-Forecasting/pyproject.toml
+      - name: Install project and optional test/model/UI dependencies
+        run: |
+          python -m pip install --upgrade pip
+          python -m pip install -e ".[all,test]"
+      - name: Compile implementation
+        run: python -m compileall -q src dashboard.py tests
+      - name: Deterministic leakage and model tests, no network data
+        run: python -m pytest -q tests

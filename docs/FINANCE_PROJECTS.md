@@ -2,7 +2,7 @@
 
 [← Back to portfolio](../README.md)
 
-These projects demonstrate finance analysis, decision support, KPI design, forecasting logic, and executive communication using scenario datasets.
+These projects demonstrate finance analysis, decision support, KPI design, forecasting logic, and executive communication using explicitly labeled scenario datasets or external market observations, depending on the project.
 
 ## Projects
 
@@ -15,6 +15,9 @@ Monthly management reporting package focused on budget performance, variance dri
 ### [Defense Contractor Peer Benchmarking](../Defense-Contractor-Peer-Benchmarking/README.md)
 External benchmarking and planning analysis covering market size, peer growth, concentration, and long-range scenarios.
 
+### [Market Returns & Volatility Forecasting](../Market-Returns-Volatility-Forecasting/README.md)
+Standalone, observation-driven market time-series research, strict provider data checks, expanding-origin volatility forecasts, optional ARCH/GARCH, return baselines, uncertainty and an interactive dashboard. No empirical results are claimed in advance.
+
 ## Data-use note
 
-These projects use Kaggle/community scenario datasets for portfolio analysis. They are not presented as audited financial statements, official procurement records, or proprietary internal company data.
+The program-finance, variance and peer-benchmarking projects use labeled scenario datasets; their outputs are not audited financial statements, procurement records or proprietary internal data. The separate market-volatility project acquires external historical observations when a provider is reachable, and does not include or claim measured market backtests in advance.

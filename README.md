@@ -127,6 +127,25 @@ A peer-analysis model covering estimated category revenue, concentration, geogra
 
 </td>
 </tr>
+<tr>
+<td colspan="2" valign="top">
+
+### 🔬 Market Returns & Volatility Forecasting
+
+**Financial time series · Statistical diagnostics · Chronological evaluation**
+
+A standalone, reproducible research application comparing next-session volatility forecasts (historical, EWMA and optional ARCH/GARCH) against simple benchmarks, with return prediction treated as a distinct statistical task.
+
+**Highlights**
+- Audited acquisition workflow for publicly sourced adjusted market prices
+- Expanding-origin, leakage-safe out-of-sample backtesting and uncertainty estimates
+- Interactive Streamlit dashboard with observed, predicted and hypothetical outcomes labeled separately
+- No published empirical backtest scores until real market observations are acquired and evaluated
+
+**[Explore project →](Market-Returns-Volatility-Forecasting/README.md)**
+
+</td>
+</tr>
 </table>
 
 ---
