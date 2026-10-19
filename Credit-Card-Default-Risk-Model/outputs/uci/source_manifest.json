@@ -1,0 +1,10 @@
+{
+  "dataset": "UCI Default of Credit Card Clients",
+  "dataset_id": 350,
+  "doi": "10.24432/C55S3H",
+  "license": "CC BY 4.0",
+  "original_xls_sha256": "30c6be3abd8dcfd3e6096c828bad8c2f011238620f5369220bd60cfc82700933",
+  "observations": 30000,
+  "source_url": "https://archive.ics.uci.edu/dataset/350/default+of+credit+card+clients",
+  "analysis": "next-month historical cardholder default, not underwriting"
+}

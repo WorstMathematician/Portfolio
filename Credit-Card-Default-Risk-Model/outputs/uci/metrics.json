@@ -1,0 +1,87 @@
+{
+  "data_source": "uci",
+  "observations": 30000,
+  "train_rows": 18000,
+  "validation_rows": 6000,
+  "test_rows": 6000,
+  "split": "stratified random; temporal split impossible on single 2005 cross-section",
+  "excluded_features": [
+    "ID",
+    "SEX",
+    "EDUCATION",
+    "MARRIAGE",
+    "AGE"
+  ],
+  "champion_selected_on_validation": "hist_gradient_boosting",
+  "validation_baseline": {
+    "roc_auc": 0.5,
+    "average_precision": 0.22116666666666668,
+    "brier_score": 0.17225197530864197,
+    "precision_at_0_5": 0.0,
+    "recall_at_0_5": 0.0,
+    "f1_at_0_5": 0.0,
+    "positive_rate": 0.22116666666666668,
+    "n": 6000
+  },
+  "validation_champion": {
+    "roc_auc": 0.7819616966166006,
+    "average_precision": 0.5510836831309855,
+    "brier_score": 0.1345365465988068,
+    "precision_at_0_5": 0.6831395348837209,
+    "recall_at_0_5": 0.3541823662396383,
+    "f1_at_0_5": 0.4665012406947891,
+    "positive_rate": 0.22116666666666668,
+    "n": 6000
+  },
+  "held_out_test": {
+    "roc_auc": 0.7773118546780065,
+    "average_precision": 0.5560436710055083,
+    "brier_score": 0.13525949547719873,
+    "precision_at_0_5": 0.6723891273247496,
+    "recall_at_0_5": 0.3541823662396383,
+    "f1_at_0_5": 0.46396841066140176,
+    "positive_rate": 0.22116666666666668,
+    "n": 6000
+  },
+  "held_out_test_baseline": {
+    "roc_auc": 0.5,
+    "average_precision": 0.22116666666666668,
+    "brier_score": 0.172251975308642,
+    "precision_at_0_5": 0.0,
+    "recall_at_0_5": 0.0,
+    "f1_at_0_5": 0.0,
+    "positive_rate": 0.22116666666666668,
+    "n": 6000
+  },
+  "chosen_policy_cutoff_on_validation": 0.2,
+  "validation_policy": {
+    "maximum_predicted_default_probability": 0.2,
+    "approval_rate_pct": 66.55,
+    "approved_accounts": 3993,
+    "observed_default_rate_in_approved_pct": 11.1445,
+    "hypothetical_total_payoff": 203260.0,
+    "hypothetical_payoff_per_applicant": 33.876666666666665
+  },
+  "held_out_test_policy": {
+    "maximum_predicted_default_probability": 0.2,
+    "approval_rate_pct": 65.8833,
+    "approved_accounts": 3953,
+    "observed_default_rate_in_approved_pct": 11.4597,
+    "hypothetical_total_payoff": 193500.0,
+    "hypothetical_payoff_per_applicant": 32.25
+  },
+  "scenario_assumptions": {
+    "performing_account_payoff_units": 120.0,
+    "default_account_payoff_units": -500.0,
+    "reject_payoff_units": 0
+  },
+  "limitations": [
+    "The dataset contains existing Taiwan 2005 credit-card customers; not Affirm loan applicants.",
+    "The next-month default outcome is not a loan approval decision or an actual recovery/loss amount.",
+    "No per-application decision timestamp exists; chronological holdout is unavailable.",
+    "Observed outcomes on cardholders are not counterfactual outcomes for rejected applicants.",
+    "Hypothetical payoff coefficients are not real bank profitability or fair-lending policy.",
+    "Sensitive fields excluded from features, but exclusion alone does not establish fairness.",
+    "Do not deploy this scoring model for real consumer credit decisions."
+  ]
+}
