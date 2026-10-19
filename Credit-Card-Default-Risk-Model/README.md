@@ -33,7 +33,7 @@ python Credit-Card-Default-Risk-Model/src/risk_model.py --mode synthetic-demo
 
 The synthetic generator makes 6,000 **fictional observations** with intentionally programmed outcome associations. Example performance is **not** validated empirical predictive performance. Its only purpose is testing that the pipeline, outputs, metrics, and guardrails execute end to end.
 
-See [`outputs/synthetic_demo/REPORT.md`](outputs/synthetic_demo/REPORT.md) for locally reproduced simulation results. UCI-mode metrics are generated as `outputs/uci/` when the real data run completes; **none are claimed before that run**.
+See [`outputs/synthetic_demo/REPORT.md`](outputs/synthetic_demo/REPORT.md) for locally reproduced simulation results. The [empirical UCI GitHub Actions workflow](../.github/workflows/credit-uci-evaluation.yml) retrieves the original UCI XLS, executes the same model pipeline on the full public dataset, verifies the input size, and publishes **aggregate-only results** under [`outputs/uci/`](outputs/uci/) after a successful run. Its `source_manifest.json` records the original XLS checksum and attribution. **If `outputs/uci/` is absent, empirical UCI results have not yet been verified or published.**
 
 ## Methodology and leakage controls
 
