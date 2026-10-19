@@ -133,14 +133,14 @@ A peer-analysis model covering estimated category revenue, concentration, geogra
 
 ## 🔎 Credit Risk & Lending Analytics
 
-These two end-to-end projects demonstrate the distinction between **portfolio monitoring** and **customer-level default probability modeling**. One uses **fully synthetic loans** for SQL reporting; the other is configured for the **public UCI 2005 Taiwan credit-card dataset**, with simulation results separately labeled.
+**Two distinct financial risk workflows:** reproducible SQL portfolio monitoring on 2,400 entirely **fictional loans**, and next-month credit-card default classification using **30,000 real historical records** from the public UCI dataset (Taiwan, 2005). Evidence, data origin, and limitations are explicit.
 
-| Project | Business question | Inspect the evidence |
+| Project | What the analyst can inspect | Public result |
 | --- | --- | --- |
-| **[Credit Portfolio SQL Monitoring](Credit-Portfolio-SQL-Monitoring/README.md)** | How do delinquency, contractual exposure, payment transitions and origination vintages change over time? | SQLite queries, 2,400 fictional loan histories, 44,400 month-end loan snapshots, reproducibility tests, and defined denominators |
-| **[Credit Card Default Risk](Credit-Card-Default-Risk-Model/README.md)** | Which classifiers rank next-month risk, how well calibrated are they, and what do hypothetical classification thresholds change? | UCI data acquisition instructions, leakage-safe train/validation/test splits, logistic regression, gradient boosting, probability evaluation, and a transparent synthetic demo |
+| **[Credit Portfolio SQL Monitoring](Credit-Portfolio-SQL-Monitoring/README.md)** | Contractual payment schedules, as-of balances, FIFO delinquency, 30+ DPD exposure, roll rates, and seasoned vintage cohorts; five tested SQL scripts | 2,400 **synthetic** loans; 44,400 monthly snapshots; reproducible CSV outputs |
+| **[Credit Card Default Risk](Credit-Card-Default-Risk-Model/README.md)** | UCI source attribution, 60/20/20 train-validation-test isolation, baseline vs logistic regression vs boosting, PR-AUC, ROC-AUC, Brier/calibration, and validation-only threshold analysis | UCI **empirical** held-out ROC-AUC **0.7773**, PR-AUC **0.5560**, Brier **0.1353** ([results](Credit-Card-Default-Risk-Model/outputs/uci/REPORT.md)) |
 
-> **Research scope:** These are independent portfolio demonstrations, not Affirm customer data, production credit scores, or approved lending decisions. Synthetic-model metrics are not empirical UCI results.
+> **Interpretation:** UCI results describe next-month labels of 2005 Taiwan credit-card holders, not U.S. underwriting, credit policy performance, or Affirm customers. Portfolio SQL figures are generated from synthetic loans and are **not** lender outcomes. No live scoring, production deployment, fair-lending certification, or causal profitability claim is made.
 
 ---
 

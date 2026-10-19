@@ -4,6 +4,26 @@
 
 > **Do not use for real credit decisions.** The UCI observations are Taiwan credit-card **existing account holders from 2005**, not U.S. loan applications, Affirm customers, underwriting labels, or a deployable fair-lending model. Synthetic-mode results are wholly invented.
 
+## Empirical UCI benchmark — completed on original public data
+
+[GitHub Actions reproduced the evaluation](../.github/workflows/credit-uci-evaluation.yml) on the **original 30,000-row 2005 Taiwan dataset**, using a 60/20/20 train-validation-test split. The validation-chosen champion was **histogram gradient boosting**, selected for the lowest validation Brier score among the two trained candidates (with a prevalence baseline for comparison). The final test partition was not used for model or threshold selection.
+
+| Locked holdout measure | Verified result |
+| --- | ---: |
+| Test observations | 6,000 |
+| ROC-AUC | **0.7773** |
+| Average precision / PR-AUC | **0.5560** |
+| Brier score | **0.1353** |
+| Precision at 0.50 risk cutoff | **0.6724** |
+| Recall at 0.50 risk cutoff | **0.3542** |
+| F1 at 0.50 risk cutoff | **0.4640** |
+
+The **0.20 hypothetical acceptance cutoff** was selected using *validation* payoff assumptions only, then evaluated once on test; its **65.88%** holdout approval-scenario share is **not an actual lending approval rate**. The test data represent existing cardholders with observed labels, so the project cannot infer outcomes for applicants who were rejected.
+
+**Inspect the evidence:** [empirical technical report](outputs/uci/REPORT.md) · [full structured metrics](outputs/uci/metrics.json) · [calibration bins](outputs/uci/test_calibration_bins.csv) · [source SHA256 and citation](outputs/uci/source_manifest.json) · [GitHub Actions workflow](../.github/workflows/credit-uci-evaluation.yml). The original XLS is excluded from version control, as are all customer-level rows.
+
+**Evaluation limitation:** No per-customer decision timestamps allow a true out-of-time holdout. The stratified random split is appropriate for a historical benchmark, not production credit validation.
+
 ## Business question
 
 When ranking customers by risk of next-month default, how should an analyst separate **ranking quality (ROC-AUC / PR-AUC)** from **probability quality (Brier score / calibration)**, and distinguish **classification thresholds** from *hypothetical* policy tradeoffs?
