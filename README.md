@@ -131,6 +131,19 @@ A peer-analysis model covering estimated category revenue, concentration, geogra
 
 ---
 
+## 🔎 Credit Risk & Lending Analytics
+
+These two end-to-end projects demonstrate the distinction between **portfolio monitoring** and **customer-level default probability modeling**. One uses **fully synthetic loans** for SQL reporting; the other is configured for the **public UCI 2005 Taiwan credit-card dataset**, with simulation results separately labeled.
+
+| Project | Business question | Inspect the evidence |
+| --- | --- | --- |
+| **[Credit Portfolio SQL Monitoring](Credit-Portfolio-SQL-Monitoring/README.md)** | How do delinquency, contractual exposure, payment transitions and origination vintages change over time? | SQLite queries, 2,400 fictional loan histories, 44,400 month-end loan snapshots, reproducibility tests, and defined denominators |
+| **[Credit Card Default Risk](Credit-Card-Default-Risk-Model/README.md)** | Which classifiers rank next-month risk, how well calibrated are they, and what do hypothetical classification thresholds change? | UCI data acquisition instructions, leakage-safe train/validation/test splits, logistic regression, gradient boosting, probability evaluation, and a transparent synthetic demo |
+
+> **Research scope:** These are independent portfolio demonstrations, not Affirm customer data, production credit scores, or approved lending decisions. Synthetic-model metrics are not empirical UCI results.
+
+---
+
 ## 💼 Finance & Decision Support
 
 <table>

@@ -1,0 +1,45 @@
+name: Credit Analytics Projects
+
+on:
+  push:
+    paths:
+      - 'Credit-Portfolio-SQL-Monitoring/**'
+      - 'Credit-Card-Default-Risk-Model/**'
+      - '.github/workflows/credit-analytics-validation.yml'
+  pull_request:
+    paths:
+      - 'Credit-Portfolio-SQL-Monitoring/**'
+      - 'Credit-Card-Default-Risk-Model/**'
+      - '.github/workflows/credit-analytics-validation.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  validate-credit-analytics:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Install tests and modeling dependencies
+        run: |
+          python -m pip install --upgrade pip
+          python -m pip install -r Credit-Card-Default-Risk-Model/requirements.txt
+      - name: Execute both projects and verify deterministic outputs
+        run: |
+          python Credit-Portfolio-SQL-Monitoring/src/build.py --db /tmp/credit-demo.sqlite --output /tmp/credit-sql-outputs
+          python Credit-Card-Default-Risk-Model/src/risk_model.py --mode synthetic-demo --output /tmp/credit-model-outputs
+          python -m pytest -q Credit-Portfolio-SQL-Monitoring/tests Credit-Card-Default-Risk-Model/tests
+      - name: Validate published synthetic result provenance
+        run: |
+          python - <<'PY'
+          import json
+          from pathlib import Path
+          published=json.loads(Path('Credit-Card-Default-Risk-Model/outputs/synthetic_demo/metrics.json').read_text())
+          reproduced=json.loads(Path('/tmp/credit-model-outputs/metrics.json').read_text())
+          assert published == reproduced, 'Committed demonstration metrics differ from reproducible run'
+          print('Published synthetic metrics reproduce exactly.')
+          PY
