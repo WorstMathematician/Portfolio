@@ -1,0 +1,13 @@
+period,measure,observation_type,source_url,status,notes
+2017-18,H,quarterly_expenditure,https://homeless.lacounty.gov/evaluations-audits/,summary_only,detailed_extraction_pending
+2018-19,H,quarterly_expenditure,https://homeless.lacounty.gov/evaluations-audits/,summary_only,detailed_extraction_pending
+2019-20,H,quarterly_expenditure,https://homeless.lacounty.gov/evaluations-audits/,summary_only,detailed_extraction_pending
+2020-21,H,quarterly_expenditure,https://homeless.lacounty.gov/evaluations-audits/,summary_only,reporting_scope_unclassified
+2021-22,H,quarterly_expenditure,https://homeless.lacounty.gov/evaluations-audits/,summary_only,reporting_scope_unclassified
+2022-23,H,quarterly_expenditure,https://homeless.lacounty.gov/evaluations-audits/,summary_only,detailed_extraction_pending
+2023-24,H,quarterly_expenditure,https://file.lacounty.gov/SDSInter/lac/1187357_MeasureHExpenditureLog-FY23-24-COAB.pdf,detail_extracted,ongoing_only
+2024-25,H,quarterly_expenditure,https://file.lacounty.gov/SDSInter/lac/1195430_MeasureHExpenditureLog-FY24-25-COAB.pdf,detail_extracted,ongoing_only
+2025-26,A,approved_allocation,https://homeless.lacounty.gov/budget-archive/,source_identified,not_actual_spending
+2026-27,A,approved_allocation,https://homeless.lacounty.gov/fiscal-year-2026-27-measure-a-spending-plan/,source_identified,includes_H_carryover_and_HHAP
+A-era,A,receipts_distribution,https://lacahsa.gov/measure-a-funds-tracker/,source_identified,LACAHSA_scope
+A-era,A,service_outcomes,https://homeless.lacounty.gov/measure-a-progress-tracker/,source_identified,not_financial_actuals
