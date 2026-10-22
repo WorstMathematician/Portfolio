@@ -159,6 +159,12 @@ The finance projects emphasize **management usefulness**, not just calculation: 
 
 ---
 
+## 🧾 Operational Finance Systems (Real-World Work)
+
+**[T.R.U.S.T. South LA — Reimbursement Invoice Studio](TRUST-Reimbursement-Invoice-Studio/README.md)** — Completed SPFx finance document workflow integrating a live, read-only Microsoft 365 expense tracker, original receipt verification, combined reimbursement PDFs, and source-based spending analytics. Tested with 440 real source records. The case study excludes proprietary data and code and distinguishes the verified pilot from the selected v1.2 release.
+
+---
+
 ## 🧪 Analytics & Statistics
 
 <table>

@@ -2,7 +2,7 @@
 
 [← Back to portfolio](../README.md)
 
-These projects demonstrate finance analysis, decision support, KPI design, forecasting logic, and executive communication using scenario datasets.
+This index distinguishes **public scenario-data analyses** from a **public-safe case study of a real organizational finance application**. No internal transaction records, receipts, SharePoint workbook identifiers, or private application source are published.
 
 ## Projects
 
@@ -15,6 +15,11 @@ Monthly management reporting package focused on budget performance, variance dri
 ### [Defense Contractor Peer Benchmarking](../Defense-Contractor-Peer-Benchmarking/README.md)
 External benchmarking and planning analysis covering market size, peer growth, concentration, and long-range scenarios.
 
+## Operational finance systems
+
+### [T.R.U.S.T. South LA Reimbursement Invoice Studio](../TRUST-Reimbursement-Invoice-Studio/README.md)
+A SharePoint finance application case study: authenticated read-only workbook ingestion, receipt verification, invoice-plus-appendix PDF generation, financial analytics, and a streamlined download-first operating scope. Pilot evidence includes 440 live transactions and a verified sample PDF. Organizational source code and records are not public.
+
 ## Data-use note
 
-These projects use Kaggle/community scenario datasets for portfolio analysis. They are not presented as audited financial statements, official procurement records, or proprietary internal company data.
+The public analytics project folders use scenario/community data and are not presented as audited financial statements or official procurement records. The reimbursement project is a public-safe description of an actual authorized internal workflow; its source files and transaction records are not public, and its pilot results are not claims of financial savings.
